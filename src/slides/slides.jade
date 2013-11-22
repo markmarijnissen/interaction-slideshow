@@ -1,0 +1,142 @@
+div(revealjs="{}",ng-controller="slidesCtrl")
+  div.slides
+    section 
+      //- 0,0
+      section 
+        h2 Made by Mark
+        p Interactive apps
+        p Mark Marijnissen
+        p [foto]
+
+      //- 0,1
+      section
+        h2 Interactive apps
+
+      //- 0,2
+      section
+        h2 TV
+        p.fragment interactive!
+
+      //- 0,3
+      section
+        h2 Meditation
+        p.fragment interactive!
+
+      //- 0,4
+      section
+        h2 Concert
+        p.fragment interactive!
+
+    section
+      //-1,0
+      section
+        h2 demo
+      
+      //-1,1
+      section
+        ul
+          li.fragment trigger sounds
+          li.fragment do wave -- trigger soundwave
+          li.fragment change colors
+          li.fragment vote
+          li.fragment 
+            | control me (color) [2 kanten op]
+            ul
+              li(ng-repeat="theme in themes") 
+                a.btn(hm-tap="setTheme(theme)") {{theme}} 
+              
+    //-2,0
+    section
+      h2 achter de schermen
+      p plaatje computers apparaten
+
+    //-3,0
+    section
+      h2 Succesvolle interacties
+      p.fragment veel voorkomende fouten
+      p
+        ol 
+          li
+            div.fragment ...app met inhoud verwarren:
+            div.fragment: strong TECHNIEK IS WAARDELOOS
+          li.fragment ...teveel moeite gestoken in design &amp; performance
+          li.fragment ...(het concept) te weinig getest!
+
+    //-4,0
+    section
+      h2 Wat voegt het toe aan...
+      ul
+        li ... de voorstelling?
+        li ... de ervaring van de toeschouwer?
+
+
+    section
+      //-5,0
+      section
+        iframe.fullscreen(data-autoplay,width="420",height="345",allowfullscreen,src="//www.youtube.com/embed/CkP-smFvX5I")
+
+      //-5,1
+      section
+        h2 SHAKE camel race
+
+      //-5,2
+      section
+        h2 Music Quiz &amp; Control The Lights
+
+      //-5,3
+      section
+        h2 Vote to influence Music
+
+      //-5,4
+      section
+        h2 play music
+
+    section
+      //-6,0
+      section
+        h2 more demo 
+
+      //-6,1
+      section
+        h2 multi snake
+
+      //-6,2
+      section
+        h2 lichtschrijven
+
+    //-7
+    section
+      h2 experimenteren!
+
+    //-8
+    section
+      h2 Ontwikkelaar
+      ul
+        li kosten -vs- baten
+        li -- dus haalbaar?
+        li beperkingen techniek
+        li alternatieve opties
+
+    //-9
+    section
+      ul
+        li brainstorm (10 min)
+        li bespreek ideeen (20 min)
+      div.row
+        div.col-xs-6
+          h2 Artiest
+          ul
+            li voorstelling
+            li gebruikers ervaring
+        div.col-xs-6
+          h2 Ontwikkelaar
+          ul
+            li kosten-baten
+            li haalbaarheid
+            li beperkingen
+            li andere ideeen
+
+
+    //-10
+    section
+      h2 inspiratie plaatje

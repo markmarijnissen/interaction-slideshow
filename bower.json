@@ -1,0 +1,47 @@
+{
+  "name": "your-app",
+  "version": "0.0.1",
+  "main": "public/app.js",
+  "dependencies": {
+    "angular": "~1.2.2",
+    "angular-route": "~1.2.2",
+    "reveal.js": "~2.5.0",
+    "jquery": "~2.0.3",
+    "angular-fire": "~0.3.1",
+    "angular-gestures": "~0.2.0"
+  },
+  "overrides": {
+    "angular": {
+      "main": [
+        "angular.js"
+      ]
+    },
+    "angular-route": {
+      "main": [
+        "angular-route.min.js"
+      ]
+    },
+    "angular-gestures": {
+      "main":"gestures.min.js"
+    },
+    "reveal.js": {
+      "main": [
+        "lib/js/classList.js",
+        "lib/js/head.min.js",
+        "lib/js/html5shiv.js",
+        "js/reveal.js",
+        "css/reveal.css"
+      ]
+    }
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.14.0",
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.4.0",
+    "angular-mocks": "~1.2.1"
+  },
+  "resolutions": {
+    "angular": "~1.2.2"
+  }
+}
