@@ -1,39 +1,76 @@
-div(revealjs="{}",ng-controller="slidesCtrl")
+div(revealjs="options",ng-controller="slidesCtrl")
   div.slides
     section 
       //- 0,0
-      section 
-        h2 Made by Mark
-        p Interactive apps
-        p Mark Marijnissen
-        p [foto]
+      section#intro
+        .row
+          .col-xs-12
+            h2 interactieve voorstellingen
+        .row          
+          .col-xs-6
+            img(src="images/madebymark.png")
+            p Mark Marijnissen          
+          .col-xs-6
+            img(src="images/tin-men.jpg")
+            p Tony Roe
 
-      //- 0,1
-      section
-        h2 Interactive apps
+            //-p Ga naar <a href="http://demo.madebymark.nl">demo.madebymark.nl</a> om mee te doen!
+              hr
+              p 1 online
+      
+    section
+      section#madebymark
+        img(src="images/madebymark.png")
+        p Mark Marijnissen<br/>Made by Mark
+      
+      section#interactive
+        .fragment.swap
+          img.disappear.simple(src="images/interactive-stuff-1.png")
+          img.appear.simple(src="images/interactive-stuff-2.png")
 
-      //- 0,2
-      section
-        h2 TV
-        p.fragment interactive!
+      section#interactive-tv
+        .fragment.swap
+          img.disappear.simple(src="images/interactive-tv-1.png")
+          img.appear.simple(src="images/interactive-tv-2.png")
 
-      //- 0,3
-      section
-        h2 Meditation
-        p.fragment interactive!
+      section#interactive-meditation
+        .fragment.swap
+          img.disappear.simple(src="images/interactive-meditation-1.png")
+          img.appear.simple(src="images/interactive-meditation-2.png")
 
-      //- 0,4
-      section
-        h2 Concert
-        p.fragment interactive!
+      section#interactive-concert
+        .fragment.swap
+          img.disappear.simple(src="images/interactive-concert-1.png")
+          img.appear.simple(src="images/interactive-concert-2.png")
+
+      section#interactive-song
+        .fragment.swap
+          img.disappear.simple(src="images/interactive-song-1.png")
+          img.appear.simple(src="images/interactive-song-2.png")
+
+    section
+      section#tonyroe
+        img(src="images/tin-men.jpg")
+        p Tony Roe<br/>Tin Men &amp; The Telephone
+
+      section#tinmen1(data-background="images/tin-men2.jpg")
+
+      section#tinmen2(data-background="images/tin-men3.jpg")
 
     section
       //-1,0
-      section
-        h2 demo
+      section#demo
+        h2 demonstratie
+
+      section#sounds
+        h2 geluiden afspelen
+
+      section#vote
+        h2 stemmen
+        p [ resultaten ]
       
-      //-1,1
-      section
+    //-
+      section#demo
         ul
           li.fragment trigger sounds
           li.fragment do wave -- trigger soundwave
@@ -47,96 +84,73 @@ div(revealjs="{}",ng-controller="slidesCtrl")
               
     //-2,0
     section
-      h2 achter de schermen
-      p plaatje computers apparaten
+      section#smartphone
+        img.simple(src="images/interaction-technology-phone.png")
+
+      section#smartphone-control(data-transition="none")
+        img.simple(src="images/interaction-technology-phone-control.png")
+
+      section#smartphone-input(data-transition="none")
+        img.simple(src="images/interaction-technology-phone-user.png")
+
+      section#computer(data-transition="none")
+        img.simple(src="images/interaction-technology-computer.png")
+
+      section#computer-smartphone-interaction(data-transition="none")
+        img.simple(src="images/interaction-technology-computer-arrows.png")
+
+      section#computer-output(data-transition="none")
+        img.simple(src="images/interaction-technology-computer-output.png")
+
+      section#computer-input(data-transition="none")
+        img.simple(src="images/interaction-technology-computer-input.png")
+
+      section#interaction-technology(data-transition="none")
+        img.simple(src="images/interaction-technology.png")
 
     //-3,0
     section
-      h2 Succesvolle interacties
-      p.fragment veel voorkomende fouten
-      p
-        ol 
-          li
-            div.fragment ...app met inhoud verwarren:
-            div.fragment: strong TECHNIEK IS WAARDELOOS
-          li.fragment ...teveel moeite gestoken in design &amp; performance
-          li.fragment ...(het concept) te weinig getest!
-
-    //-4,0
-    section
-      h2 Wat voegt het toe aan...
-      ul
-        li ... de voorstelling?
-        li ... de ervaring van de toeschouwer?
+      section#fouten
+        h2 Tips: NIET doen
+        p Veel voorkomende fouten:
+        p
+          ol 
+            li
+              div.fragment Interactie techniek met inhoud verwarren
+              div.fragment: strong TECHNIEK IS WAARDELOOS
+            li.fragment ...teveel energie steken in design &amp; performance
+            li.fragment ...(het concept) te weinig getest!
 
 
-    section
-      //-5,0
-      section
-        iframe.fullscreen(data-autoplay,width="420",height="345",allowfullscreen,src="//www.youtube.com/embed/CkP-smFvX5I")
-
-      //-5,1
-      section
-        h2 SHAKE camel race
-
-      //-5,2
-      section
-        h2 Music Quiz &amp; Control The Lights
-
-      //-5,3
-      section
-        h2 Vote to influence Music
-
-      //-5,4
-      section
-        h2 play music
-
-    section
-      //-6,0
-      section
-        h2 more demo 
-
-      //-6,1
-      section
-        h2 multi snake
-
-      //-6,2
-      section
-        h2 lichtschrijven
-
-    //-7
-    section
-      h2 experimenteren!
+      section#tips
+        h2 Tips: WEL doen
+        p Vraag je af: Wat voegt het toe aan...
+        ul
+          li ... de voorstelling?
+          li.fragment ... de beleving van de toeschouwer?
 
     //-8
-    section
-      h2 Ontwikkelaar
-      ul
-        li kosten -vs- baten
-        li -- dus haalbaar?
-        li beperkingen techniek
-        li alternatieve opties
-
-    //-9
-    section
-      ul
-        li brainstorm (10 min)
-        li bespreek ideeen (20 min)
-      div.row
-        div.col-xs-6
-          h2 Artiest
+    section#feedback
+      .row
+        .col-xs-6
+          h2 Vraag
+          p Brainstorm een interactie
           ul
-            li voorstelling
-            li gebruikers ervaring
-        div.col-xs-6
-          h2 Ontwikkelaar
+            li Welke technieken? 
+            li
+              | Wat voeg je toe aan...
+              ul 
+                li ...de voorstelling?
+                li ...de beleving?
+        .col-xs-6.fragment
+          h2 &amp; Antwoord
           ul
-            li kosten-baten
+            li de kosten tegenover baten
+            li beperkingen vanuit techniek
             li haalbaarheid
-            li beperkingen
-            li andere ideeen
-
+            li alternatieve ideeën
+ 
 
     //-10
-    section
-      h2 inspiratie plaatje
+    section#overview
+      img.simple(src="images/interaction-technology.png")

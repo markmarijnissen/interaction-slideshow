@@ -18,6 +18,7 @@ angular.module('slides',['views','revealjs','angular-gestures'])
       if reveal is true
         Reveal.addEventListener 'slidechanged', update
         Reveal.addEventListener 'fragmentshown', update
+        Reveal.addEventListener 'fragmenthidden', update
   ])
 
 .controller('slidesCtrl', 
@@ -27,9 +28,11 @@ angular.module('slides',['views','revealjs','angular-gestures'])
     themeRef.on 'value', (snapshot) ->
       setTheme(snapshot.val())
 
-    $scope.themes = "beige,default,moon,night,serif,simple,sky,solarized  ".split(',')
+    $scope.themes = "beige default moon night serif simple sky solarized".split(' ')
 
     $scope.setTheme = (theme) ->
       setTheme(theme)
       themeRef.set(theme)
+
+    $scope.options = { controls: no, history: yes, backgroundTransition: 'slide', margin: 0 }
   ])

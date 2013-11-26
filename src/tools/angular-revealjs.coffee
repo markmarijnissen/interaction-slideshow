@@ -3,7 +3,7 @@ angular.module('revealjs',[])
 	['$window','$rootScope'
 	($window,$rootScope) ->
 		scope: 
-			options: '@revealjs'
+			options: '&revealjs'
 		link: ($scope,elem,attrs) -> 
 			$rootScope.reveal = true;
 			elem.addClass('reveal')
@@ -14,6 +14,6 @@ angular.module('revealjs',[])
 			window.elem = elem
 			if(!$scope.options.fitToParent) 
 				elem.css('position','absolute')
-			Reveal.initialize($scope.options)
+			Reveal.initialize($scope.options())
 	]		
 

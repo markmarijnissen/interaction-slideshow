@@ -22,7 +22,7 @@
       ]
     },
     "angular-gestures": {
-      "main":"gestures.min.js"
+      "main": "gestures.min.js"
     },
     "reveal.js": {
       "main": [

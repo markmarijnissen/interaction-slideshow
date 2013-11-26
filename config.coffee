@@ -52,6 +52,11 @@ exports.config =
         'controller/controller.app.css': controllerAppFilter
         'slides/slides.app.css':slidesAppFilter
         'viewer/viewer.app.css':viewerAppFilter
+      order:
+        before: [
+          'src/slides/themes/default.less',
+          'src/slides/slides.less'
+        ]
     
     templates:
       joinTo: 

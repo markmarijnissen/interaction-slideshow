@@ -1,0 +1,27 @@
+/* hide if mismatch */
+.desktop .hide-desktop,
+.desktop .show-tablet,
+.desktop .show-mobile,
+.tablet .show-desktop,
+.tablet .hide-tablet,
+.tablet .show-mobile,
+.mobile .show-dekstop,
+.mobile .show-tablet,
+.mobile .hide-mobile {
+	display: none;
+}
+
+/* show 'block' if match (overrides hide) */
+.desktop .show-desktop,
+.tablet .show-tablet,
+.mobile .show-mobile {
+	display: block;
+}
+
+/* show span inline (overrides show & hide) */
+.desktop span.show-desktop,
+.tablet span.show-tablet,
+.mobile span.show-mobile {
+	display: inline;
+}
+
